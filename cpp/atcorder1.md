@@ -72,3 +72,32 @@ cout << "\n";
 bool flags[1000];
 fill(flags, flags+1000, true);
 ```
+
+### double型の出力範囲を広げるには？
+
+```cpp
+cout << fixed << setprecision(15)<<(l/3)*(l/3)*(l/3) << endl;
+```
+
+### combinationの2を求める関数
+二つを選びなさいで使用する。
+
+```cpp
+long long combi2(long long n) {
+    return n*(n-1)/2;
+}
+```
+
+### 回文かどうかを判定する式
+
+```cpp
+string s;
+cin >> s;
+bool flag = false;
+int n = s.length();
+for(int i = 0;i < n;i++) {
+    if(s[i] != s[n-i-1]) {
+        flag = true;
+    }
+}
+```

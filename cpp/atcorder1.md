@@ -103,7 +103,8 @@ for(int i = 0;i < n;i++) {
 }
 ```
 
-### 最小公倍数、最大公約数を出力(参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
+### 最小公倍数、最大公約数を出力
+(参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
 
 ```cpp
 // 例 1: 2 つの整数 a, b を入力し、a と b の最大公約数と最小公倍数を出力する
@@ -113,7 +114,8 @@ cout << __gcd(a, b) << endl;
 cout << a / __gcd(a, b) * b << endl;
 ```
 
-### 実行時間計測(参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
+### 実行時間計測
+(参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
 
 ```cpp
 int ti = clock();
@@ -122,7 +124,8 @@ printf("Execution Time: %.4lf sec\n", 1.0 * (clock() - ti) / CLOCKS_PER_SEC);
 return 0;
 ```
 
-### reverse逆順に並び替える(参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
+### reverse逆順に並び替える
+(参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
 
 ```cpp
 // 例 1: 配列 a の 2～6 番目の要素を逆順にします。{8, 3, 2, 6, 4, 1, 7, 5} に変化します。

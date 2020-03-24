@@ -1,25 +1,3 @@
-
-### ある値が二乗かを判定する関数
-
-```cpp
-bool is_sqrt(int n) {
-   if(floor(sqrt(n))==sqrt(n)) {
-       return true;
-   } else {
-       return false;
-   }
-}
-
-bool is_sqrt(long long n) {
-   if(floor(sqrt(n))==sqrt(n)) {
-       return true;
-   } else {
-       return false;
-   }
-}
-
-```
-
 ### mapの使い方
 findはvectorでも使用できるので覚えておく。
 
@@ -137,6 +115,15 @@ return 0;
 int a;
 cin >> a;
 cout << to_string(a) << endl;
+```
+
+### string to int or double
+
+```cpp
+string c = "10000";
+string d = "2.342";
+int x = stoi(c);
+int y = stod(d);
 ```
 
 ### setの使い方

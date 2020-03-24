@@ -58,6 +58,16 @@ if (iter2 != m.end()) {
 cout << m["hello"] << endl;
 ```
 
+#### map全探索
+
+```cpp
+map<string, int> mp;
+
+for(auto itr = mp.begin(); itr != mp.end(); ++itr) {
+    // 何らかの処理
+}
+```
+
 ### fillでの初期化のやり方
 
 ```cpp
@@ -80,28 +90,6 @@ fill(flags, flags+1000, true);
 cout << fixed << setprecision(15)<<(l/3)*(l/3)*(l/3) << endl;
 ```
 
-### combinationの2を求める関数
-二つを選びなさいで使用する。
-
-```cpp
-long long combi2(long long n) {
-    return n*(n-1)/2;
-}
-```
-
-### 回文かどうかを判定する式
-
-```cpp
-string s;
-cin >> s;
-bool flag = false;
-int n = s.length();
-for(int i = 0;i < n;i++) {
-    if(s[i] != s[n-i-1]) {
-        flag = true;
-    }
-}
-```
 
 ### 最小公倍数、最大公約数を出力
 (参考サイト https://qiita.com/e869120/items/518297c6816adb67f9a5)
@@ -141,4 +129,27 @@ reverse(b, b + N);
 for (int i = 0; i < N; i++) cout << b[i] << " ";
 cout << "\n";
 return 0;
+```
+
+### int to string
+
+```cpp
+int a;
+cin >> a;
+cout << to_string(a) << endl;
+```
+
+### setの使い方
+
+```cpp
+int n;
+cin >> n;
+set<char> mp;
+for(int i = 0;i < n;i++) {
+    char x;
+    cin >> x;
+    // 挿入
+    mp.insert(x);
+}
+mp.size() // 大きさ
 ```
